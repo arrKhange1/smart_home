@@ -273,11 +273,11 @@ namespace UmniyDom
 			// BTick
 			// 
 			this.BTick.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.BTick.Location = new System.Drawing.Point(440, 470);
+			this.BTick.Location = new System.Drawing.Point(200, 560);
 			this.BTick.Name = "BTick";
 			this.BTick.Size = new System.Drawing.Size(75, 23);
 			this.BTick.TabIndex = 21;
-			this.BTick.Text = "Шаг";
+			this.BTick.Text = "+delta";
 			this.BTick.UseVisualStyleBackColor = true;
 			this.BTick.Click += new System.EventHandler(this.BTick_Click);
 			// 
@@ -555,7 +555,7 @@ namespace UmniyDom
 			this.LT.AutoSize = true;
 			this.LT.BackColor = System.Drawing.Color.Silver;
 			this.LT.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LT.Location = new System.Drawing.Point(10, 470);
+			this.LT.Location = new System.Drawing.Point(80, 560);
 			this.LT.Name = "LT";
 			this.LT.Size = new System.Drawing.Size(61, 18);
 			this.LT.TabIndex = 22;
