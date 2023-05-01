@@ -305,15 +305,15 @@ namespace UmniyDom
 		private void WinB_Click(object sender, EventArgs e)
 		{
 			winb = !winb;
-			if (winb) WinB.Text = "О";
-			else WinB.Text = "З";
+			if (winb) WinB.Text = "Открыто";
+			else WinB.Text = "Закрыто";
 		}
 
 		private void WinA_Click(object sender, EventArgs e)
 		{
 			wina = !wina;
-			if (wina) WinA.Text = "О";
-			else WinA.Text = "З";
+			if (wina) WinA.Text = "Открыто";
+			else WinA.Text = "Закрыто";
 		}
 
 		private void Door_Click(object sender, EventArgs e)

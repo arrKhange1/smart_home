@@ -352,12 +352,12 @@ namespace UmniyDom
 			this.WinA.AutoSize = true;
 			this.WinA.BackColor = System.Drawing.Color.Silver;
 			this.WinA.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.WinA.Location = new System.Drawing.Point(20, 355);
+			this.WinA.Location = new System.Drawing.Point(40, 275);
 			this.WinA.Name = "WinA";
 			this.WinA.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.WinA.Size = new System.Drawing.Size(26, 23);
 			this.WinA.TabIndex = 7;
-			this.WinA.Text = "О";
+			this.WinA.Text = "Открыто";
 			this.WinA.Click += new System.EventHandler(this.WinA_Click);
 			// 
 			// WinB
@@ -365,12 +365,12 @@ namespace UmniyDom
 			this.WinB.AutoSize = true;
 			this.WinB.BackColor = System.Drawing.Color.Silver;
 			this.WinB.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.WinB.Location = new System.Drawing.Point(20, 140);
+			this.WinB.Location = new System.Drawing.Point(895, 275);
 			this.WinB.Name = "WinB";
 			this.WinB.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.WinB.Size = new System.Drawing.Size(26, 23);
 			this.WinB.TabIndex = 8;
-			this.WinB.Text = "О";
+			this.WinB.Text = "Открыто";
 			this.WinB.Click += new System.EventHandler(this.WinB_Click);
 			// 
 			// WinE
@@ -594,15 +594,15 @@ namespace UmniyDom
 			//this.Controls.Add(this.DoorE);
 			this.Controls.Add(this.DoorB);
 			this.Controls.Add(this.DoorA);
-			//this.Controls.Add(this.WinD);
-			//this.Controls.Add(this.WinC);
-			//this.Controls.Add(this.WinE);
-			//this.Controls.Add(this.WinB);
-			//this.Controls.Add(this.WinA);
-			//this.Controls.Add(this.LF);
-			//this.Controls.Add(this.LE);
-			//this.Controls.Add(this.LD);
-			this.Controls.Add(this.LC);
+            //this.Controls.Add(this.WinD);
+            //this.Controls.Add(this.WinC);
+            //this.Controls.Add(this.WinE);
+            this.Controls.Add(this.WinB);
+            this.Controls.Add(this.WinA);
+            //this.Controls.Add(this.LF);
+            //this.Controls.Add(this.LE);
+            //this.Controls.Add(this.LD);
+            this.Controls.Add(this.LC);
 			this.Controls.Add(this.LB);
 			this.Controls.Add(this.LA);
 			this.Controls.Add(this.Panel);
