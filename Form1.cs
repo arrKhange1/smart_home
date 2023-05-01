@@ -25,14 +25,14 @@ namespace UmniyDom
 			reg = TReg.Value;
 			LKond.Text = ((int)kond).ToString();
 			LTKond.Text = "Кондиционер: " + ((int)kond).ToString();
-			LKot.Text = "Температура нагревателей: " + ((int)kot).ToString();
+			LKot.Text = "Температура батарей: " + ((int)kot).ToString();
 			LAtm.Text = "Температура атмосферы: " + ((int)atm).ToString();
 			LReg.Text = "Поддерживать температуру: " + ((int)reg).ToString();
 			katm = (double)KAtm.Value / 100;
 			kbat = (double)KBat.Value / 100; // коэф котла
 			kroom = (double)Room.Value / 100;
 			LKAtm.Text = "Влияние атмосферы: " + katm.ToString();
-			LKBat.Text = "Влияние нагревателей: " + kbat.ToString();
+			LKBat.Text = "Влияние батарей: " + kbat.ToString();
 			LKRoom.Text = "Влияние соседних комнат: " + kroom.ToString();
 			a = 20; b = 20; c = 20; d = 20; e = 20; f = 20;
 			ba = bb = bc = bd = be = kot;
@@ -283,7 +283,7 @@ namespace UmniyDom
 		private void KBat_Scroll(object sender, EventArgs e)
 		{
 			kbat = (double)KBat.Value / 100;
-			LKBat.Text = "Влияние нагревателей: " + kbat.ToString();
+			LKBat.Text = "Влияние батарей: " + kbat.ToString();
 		}
 
 		private void KAtm_Scroll(object sender, EventArgs e)
@@ -307,7 +307,7 @@ namespace UmniyDom
 		private void TKot_Scroll(object sender, EventArgs e)
 		{
 			kot = TKot.Value;
-			LKot.Text = "Температура нагревателей: " + ((int)kot).ToString();
+			LKot.Text = "Температура батарей: " + ((int)kot).ToString();
 		}
 
 		private void TKond_Scroll(object sender, EventArgs e)
