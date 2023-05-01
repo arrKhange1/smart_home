@@ -286,7 +286,7 @@ namespace UmniyDom
 			this.LA.AutoSize = true;
 			this.LA.BackColor = System.Drawing.Color.Silver;
 			this.LA.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LA.Location = new System.Drawing.Point(100, 281);
+			this.LA.Location = new System.Drawing.Point(225, 281);
 			this.LA.Name = "LA";
 			this.LA.Size = new System.Drawing.Size(34, 27);
 			this.LA.TabIndex = 1;
@@ -297,7 +297,7 @@ namespace UmniyDom
 			this.LB.AutoSize = true;
 			this.LB.BackColor = System.Drawing.Color.Silver;
 			this.LB.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LB.Location = new System.Drawing.Point(100, 70);
+			this.LB.Location = new System.Drawing.Point(780, 150);
 			this.LB.Name = "LB";
 			this.LB.Size = new System.Drawing.Size(35, 27);
 			this.LB.TabIndex = 2;
@@ -308,7 +308,7 @@ namespace UmniyDom
 			this.LC.AutoSize = true;
 			this.LC.BackColor = System.Drawing.Color.Silver;
 			this.LC.Font = new System.Drawing.Font("Arial", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LC.Location = new System.Drawing.Point(320, 70);
+			this.LC.Location = new System.Drawing.Point(560, 200);
 			this.LC.Name = "LC";
 			this.LC.Size = new System.Drawing.Size(36, 27);
 			this.LC.TabIndex = 3;
