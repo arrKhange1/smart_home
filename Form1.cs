@@ -64,9 +64,9 @@ namespace UmniyDom
 		{
 			pc = 0;
 			if (LTKond.Checked) pc = kbat * (kond - c);
-			if (doora) pf += kroom * (a - c);
-			if (doorb) pf += kroom * (b - c);
-			if (door) pf += katm * (atm - c);
+			if (doora) pc += kroom * (a - c);
+			if (doorb) pc += kroom * (b - c);
+			if (door) pc += katm * (atm - c);
 
 			//pc = kbat * (bc - c);
 			//if (winc) pc += katm * (atm - c);
@@ -290,8 +290,8 @@ namespace UmniyDom
 		private void WinE_Click(object sender, EventArgs e)
 		{
 			wine = !wine;
-			if (wine) WinE.Text = "О";
-			else WinE.Text = "З";
+			if (wine) WinE.Text = "Открыто";
+			else WinE.Text = "Закрыто";
 		}
 
 		private void WinC_Click(object sender, EventArgs e)
