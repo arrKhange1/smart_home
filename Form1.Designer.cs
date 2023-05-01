@@ -495,7 +495,7 @@ namespace UmniyDom
 			this.LBA.AutoSize = true;
 			this.LBA.BackColor = System.Drawing.Color.Silver;
 			this.LBA.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LBA.Location = new System.Drawing.Point(75, 355);
+			this.LBA.Location = new System.Drawing.Point(400, 330);
 			this.LBA.Name = "LBA";
 			this.LBA.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.LBA.Size = new System.Drawing.Size(21, 23);
@@ -507,7 +507,7 @@ namespace UmniyDom
 			this.LBB.AutoSize = true;
 			this.LBB.BackColor = System.Drawing.Color.Silver;
 			this.LBB.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LBB.Location = new System.Drawing.Point(75, 140);
+			this.LBB.Location = new System.Drawing.Point(760, 330);
 			this.LBB.Name = "LBB";
 			this.LBB.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.LBB.Size = new System.Drawing.Size(21, 23);
@@ -531,8 +531,8 @@ namespace UmniyDom
 			this.LBD.AutoSize = true;
 			this.LBD.BackColor = System.Drawing.Color.Silver;
 			this.LBD.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LBD.Location = new System.Drawing.Point(400, 330);
-			this.LBD.Name = "LBD";
+            //this.LBD.Location = new System.Drawing.Point(400, 330);
+            this.LBD.Name = "LBD";
 			this.LBD.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.LBD.Size = new System.Drawing.Size(21, 23);
 			this.LBD.TabIndex = 21;
@@ -566,7 +566,7 @@ namespace UmniyDom
 			this.LKond.AutoSize = true;
 			this.LKond.BackColor = System.Drawing.Color.Silver;
 			this.LKond.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.LKond.Location = new System.Drawing.Point(215, 360);
+			this.LKond.Location = new System.Drawing.Point(610, 300);
 			this.LKond.Name = "LKond";
 			this.LKond.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.LKond.Size = new System.Drawing.Size(21, 23);
@@ -583,9 +583,9 @@ namespace UmniyDom
 			this.Controls.Add(this.LKond);
 			this.Controls.Add(this.BTick);
 			this.Controls.Add(this.LT);
-			this.Controls.Add(this.LBE);
-			this.Controls.Add(this.LBD);
-			this.Controls.Add(this.LBC);
+			//this.Controls.Add(this.LBE);
+			//this.Controls.Add(this.LBD);
+			//this.Controls.Add(this.LBC);
 			this.Controls.Add(this.LBB);
 			this.Controls.Add(this.LBA);
 			this.Controls.Add(this.Door);
