@@ -25,9 +25,9 @@ namespace UmniyDom
 			reg = TReg.Value;
 			LKond.Text = ((int)kond).ToString();
 			LTKond.Text = "Кондиционер: " + ((int)kond).ToString();
-			LKot.Text = "Температура котла: " + ((int)kot).ToString();
+			LKot.Text = "Температура нагревателей: " + ((int)kot).ToString();
 			LAtm.Text = "Температура атмосферы: " + ((int)atm).ToString();
-			LReg.Text = "Поддерживать: " + ((int)reg).ToString();
+			LReg.Text = "Поддерживать температуру: " + ((int)reg).ToString();
 			katm = (double)KAtm.Value / 100;
 			kbat = (double)KBat.Value / 100; // коэф котла
 			kroom = (double)Room.Value / 100;
@@ -122,8 +122,42 @@ namespace UmniyDom
 					TKot_Scroll(new object(), new EventArgs());
 				}
 			}*/
-			double raznica = f - reg;
-			double proizvodnaya = df / dt;
+			//double raznica = f - reg;
+			//double proizvodnaya = df / dt;
+			//if (proizvodnaya + raznica > 1)
+			//{
+			//	if (TKot.Value - (int)Math.Abs(proizvodnaya + raznica) >= TKot.Minimum)
+			//	{
+			//		TKot.Value -= (int)Math.Abs(proizvodnaya + raznica);
+			//	}
+			//	else TKot.Value = TKot.Minimum;
+			//	TKot_Scroll(new object(), new EventArgs());
+
+			//	if (TKot.Value == TKot.Minimum)
+			//	{
+			//		LTKond.Checked = true;
+			//		if (TKond.Value - (int)Math.Abs(proizvodnaya + raznica) >= TKond.Minimum)
+			//			TKond.Value -= (int)Math.Abs(proizvodnaya + raznica);
+			//		else TKond.Value = TKond.Minimum;
+			//		TKond_Scroll(new object(), new EventArgs());
+			//	}
+			//}
+			//if (proizvodnaya + raznica < -1)
+			//{
+			//	if (TKot.Value + (int)Math.Abs(proizvodnaya + raznica) <= TKot.Maximum)
+			//	{
+			//		TKot.Value += (int)Math.Abs(proizvodnaya + raznica);
+			//	}
+			//	else TKot.Value = TKot.Maximum;
+			//	TKot_Scroll(new object(), new EventArgs());
+
+			//	LTKond.Checked = false;
+			//}
+
+
+
+			double raznica = c - reg;
+			double proizvodnaya = dc / dt;
 			if (proizvodnaya + raznica > 1)
 			{
 				if (TKot.Value - (int)Math.Abs(proizvodnaya + raznica) >= TKot.Minimum)
@@ -154,6 +188,7 @@ namespace UmniyDom
 				LTKond.Checked = false;
 			}
 		}
+
 
 		void Tick()
 		{
