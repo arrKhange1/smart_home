@@ -417,12 +417,12 @@ namespace UmniyDom
 			this.DoorA.AutoSize = true;
 			this.DoorA.BackColor = System.Drawing.Color.Silver;
 			this.DoorA.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.DoorA.Location = new System.Drawing.Point(180, 268);
+			this.DoorA.Location = new System.Drawing.Point(450, 80);
 			this.DoorA.Name = "DoorA";
 			this.DoorA.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.DoorA.Size = new System.Drawing.Size(26, 23);
 			this.DoorA.TabIndex = 12;
-			this.DoorA.Text = "О";
+			this.DoorA.Text = "Открыто";
 			this.DoorA.Click += new System.EventHandler(this.DoorA_Click);
 			// 
 			// DoorB
@@ -430,12 +430,12 @@ namespace UmniyDom
 			this.DoorB.AutoSize = true;
 			this.DoorB.BackColor = System.Drawing.Color.Silver;
 			this.DoorB.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.DoorB.Location = new System.Drawing.Point(180, 190);
+			this.DoorB.Location = new System.Drawing.Point(650, 80);
 			this.DoorB.Name = "DoorB";
 			this.DoorB.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.DoorB.Size = new System.Drawing.Size(26, 23);
 			this.DoorB.TabIndex = 13;
-			this.DoorB.Text = "О";
+			this.DoorB.Text = "Открыто";
 			this.DoorB.Click += new System.EventHandler(this.DoorB_Click);
 			// 
 			// DoorE
@@ -482,12 +482,12 @@ namespace UmniyDom
 			this.Door.AutoSize = true;
 			this.Door.BackColor = System.Drawing.Color.Silver;
 			this.Door.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-			this.Door.Location = new System.Drawing.Point(230, 426);
+			this.Door.Location = new System.Drawing.Point(550, 475);
 			this.Door.Name = "Door";
 			this.Door.RightToLeft = System.Windows.Forms.RightToLeft.No;
 			this.Door.Size = new System.Drawing.Size(26, 23);
 			this.Door.TabIndex = 17;
-			this.Door.Text = "О";
+			this.Door.Text = "Открыто";
 			this.Door.Click += new System.EventHandler(this.Door_Click);
 			// 
 			// LBA
@@ -541,7 +541,7 @@ namespace UmniyDom
 			// LBE Batary at E room
 			// 
 			this.LBE.AutoSize = true;
-			this.LBE.BackColor = System.Drawing.Color.Blue;
+			this.LBE.BackColor = System.Drawing.Color.Silver;
 			this.LBE.Font = new System.Drawing.Font("Arial", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
 			this.LBE.Location = new System.Drawing.Point(235, 62);
 			this.LBE.Name = "LBE";
@@ -589,19 +589,19 @@ namespace UmniyDom
 			this.Controls.Add(this.LBB);
 			this.Controls.Add(this.LBA);
 			this.Controls.Add(this.Door);
-			this.Controls.Add(this.DoorD);
-			this.Controls.Add(this.DoorC);
-			this.Controls.Add(this.DoorE);
+			//this.Controls.Add(this.DoorD);
+			//this.Controls.Add(this.DoorC);
+			//this.Controls.Add(this.DoorE);
 			this.Controls.Add(this.DoorB);
 			this.Controls.Add(this.DoorA);
-			this.Controls.Add(this.WinD);
-			this.Controls.Add(this.WinC);
-			this.Controls.Add(this.WinE);
-			this.Controls.Add(this.WinB);
-			this.Controls.Add(this.WinA);
-			this.Controls.Add(this.LF);
-			this.Controls.Add(this.LE);
-			this.Controls.Add(this.LD);
+			//this.Controls.Add(this.WinD);
+			//this.Controls.Add(this.WinC);
+			//this.Controls.Add(this.WinE);
+			//this.Controls.Add(this.WinB);
+			//this.Controls.Add(this.WinA);
+			//this.Controls.Add(this.LF);
+			//this.Controls.Add(this.LE);
+			//this.Controls.Add(this.LD);
 			this.Controls.Add(this.LC);
 			this.Controls.Add(this.LB);
 			this.Controls.Add(this.LA);

@@ -319,8 +319,8 @@ namespace UmniyDom
 		private void Door_Click(object sender, EventArgs e)
 		{
 			door = !door;
-			if (door) Door.Text = "О";
-			else Door.Text = "З";
+			if (door) Door.Text = "Открыто";
+			else Door.Text = "Закрыто";
 		}
 
 		private void DoorE_Click(object sender, EventArgs e)
@@ -333,29 +333,29 @@ namespace UmniyDom
 		private void DoorD_Click(object sender, EventArgs e)
 		{
 			doord = !doord;
-			if (doord) DoorD.Text = "О";
+			if (doord) DoorD.Text = "Открыто";
 			else DoorD.Text = "З";
 		}
 
 		private void DoorC_Click(object sender, EventArgs e)
 		{
 			doorc = !doorc;
-			if (doorc) DoorC.Text = "О";
+			if (doorc) DoorC.Text = "Открыто";
 			else DoorC.Text = "З";
 		}
 
 		private void DoorA_Click(object sender, EventArgs e)
 		{
 			doora = !doora;
-			if (doora) DoorA.Text = "О";
-			else DoorA.Text = "З";
+			if (doora) DoorA.Text = "Открыто";
+			else DoorA.Text = "Закрыто";
 		}
 
 		private void DoorB_Click(object sender, EventArgs e)
 		{
 			doorb = !doorb;
-			if (doorb) DoorB.Text = "О";
-			else DoorB.Text = "З";
+			if (doorb) DoorB.Text = "Открыто";
+			else DoorB.Text = "Закрыто";
 		}
 
 	}
