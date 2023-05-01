@@ -29,7 +29,7 @@ namespace UmniyDom
 			LAtm.Text = "Температура атмосферы: " + ((int)atm).ToString();
 			LReg.Text = "Поддерживать: " + ((int)reg).ToString();
 			katm = (double)KAtm.Value / 100;
-			kbat = (double)KBat.Value / 100;
+			kbat = (double)KBat.Value / 100; // коэф котла
 			kroom = (double)Room.Value / 100;
 			LKAtm.Text = "Влияние атмосферы: " + katm.ToString();
 			LKBat.Text = "Влияние нагревателей: " + kbat.ToString();
@@ -46,7 +46,7 @@ namespace UmniyDom
 		{
 			pa = kbat * (ba - a);
 			if (wina) pa += katm * (atm - a);
-			if (doora) pa += kroom * (f - a);
+			if (doora) pa += kroom * (c - a);
 			pba = kbat * (a - ba) + 0.8 * (kot - ba);
 			if (wina) pba += katm * (atm - ba);
 		}
@@ -55,18 +55,24 @@ namespace UmniyDom
 		{
 			pb = kbat * (bb - b);
 			if (winb) pb += katm * (atm - b);
-			if (doorb) pb += kroom * (f - b);
+			if (doorb) pb += kroom * (c - b);
 			pbb = kbat * (b - bb) + 0.8 * (kot - bb);
 			if (winb) pbb += katm * (atm - bb);
 		}
 
 		void PC()
 		{
-			pc = kbat * (bc - c);
-			if (winc) pc += katm * (atm - c);
-			if (doorc) pc += kroom * (d - c);
-			pbc = kbat * (c - bc) + 0.8 * (kot - bc);
-			if (winc) pbc += katm * (atm - bc);
+			pc = 0;
+			if (LTKond.Checked) pc = kbat * (kond - c);
+			if (doora) pf += kroom * (a - c);
+			if (doorb) pf += kroom * (b - c);
+			if (door) pf += katm * (atm - c);
+
+			//pc = kbat * (bc - c);
+			//if (winc) pc += katm * (atm - c);
+			//if (doorc) pc += kroom * (d - c);
+			//pbc = kbat * (c - bc) + 0.8 * (kot - bc);
+			//if (winc) pbc += katm * (atm - bc);
 		}
 
 		void PD()
