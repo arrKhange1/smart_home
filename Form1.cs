@@ -307,7 +307,7 @@ namespace UmniyDom
 		private void TKot_Scroll(object sender, EventArgs e)
 		{
 			kot = TKot.Value;
-			LKot.Text = "Температура котла: " + ((int)kot).ToString();
+			LKot.Text = "Температура нагревателей: " + ((int)kot).ToString();
 		}
 
 		private void TKond_Scroll(object sender, EventArgs e)
