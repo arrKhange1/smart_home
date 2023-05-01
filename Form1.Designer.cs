@@ -102,9 +102,9 @@ namespace UmniyDom
 			this.Panel.Controls.Add(this.LKot);
 			this.Panel.Controls.Add(this.TKot);
 			this.Panel.Controls.Add(this.RegOn);
-			this.Panel.Location = new System.Drawing.Point(525, 0);
+			this.Panel.Location = new System.Drawing.Point(1024, 0);
 			this.Panel.Name = "Panel";
-			this.Panel.Size = new System.Drawing.Size(260, 522);
+			this.Panel.Size = new System.Drawing.Size(284, 610);
 			this.Panel.TabIndex = 0;
 			// 
 			// LTKond
@@ -575,11 +575,11 @@ namespace UmniyDom
 			// 
 			// Form
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+			//this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
-			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-			this.ClientSize = new System.Drawing.Size(784, 521);
+			this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("room1")));
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+			this.ClientSize = new System.Drawing.Size(1324, 640);
 			this.Controls.Add(this.LKond);
 			this.Controls.Add(this.BTick);
 			this.Controls.Add(this.LT);
@@ -607,8 +607,8 @@ namespace UmniyDom
 			this.Controls.Add(this.LA);
 			this.Controls.Add(this.Panel);
 			this.DoubleBuffered = true;
-			this.MaximumSize = new System.Drawing.Size(800, 560);
-			this.MinimumSize = new System.Drawing.Size(800, 560);
+			this.MaximumSize = new System.Drawing.Size(1324, 640);
+			this.MinimumSize = new System.Drawing.Size(1324, 640);
 			this.Name = "Form";
 			this.Text = "Умный дом";
 			this.Panel.ResumeLayout(false);
