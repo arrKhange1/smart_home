@@ -250,7 +250,7 @@ namespace UmniyDom
 			// TKot
 			// 
 			this.TKot.Location = new System.Drawing.Point(15, 120);
-			this.TKot.Maximum = 90;
+			this.TKot.Maximum = 2000;
 			this.TKot.Minimum = 10;
 			this.TKot.Name = "TKot";
 			this.TKot.Size = new System.Drawing.Size(160, 45);
